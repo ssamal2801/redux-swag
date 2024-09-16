@@ -16,6 +16,28 @@ To install `redux-swag`, you can use npm or yarn:
 npm install redux-swag
 ```
 ## Example Usage:
+### Step 1: Wrap your app component with State Provider
+```bash
+// src/App.tsx
+import React from 'react';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+import { store, persistor } from 'redux-swag'; // Import from redux-swag
+import ExampleComponent from './ExampleComponent'; // Your application component
+
+const App: React.FC = () => {
+  return (
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <ExampleComponent />
+      </PersistGate>
+    </Provider>
+  );
+};
+
+export default App;
+```
+### Step 2: Use in component
 ```bash
 import React, { useEffect, useState } from 'react';
 import reduxSwag from 'redux-swag';
