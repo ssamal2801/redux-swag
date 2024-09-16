@@ -1,0 +1,26 @@
+Usage Example:
+
+import React, { useEffect, useState } from 'react';
+import reduxSwag from 'redux-swag';
+
+const ExampleComponent: React.FC = () => {
+
+  useEffect(() => {
+    // Retrieve a value from the store
+    const storedValue = reduxSwag.get('myKey');
+  }, []);
+
+  const handleSetValue = () => {
+    // Set a value in the store with persistence
+    reduxSwag.set('myKey', 'New Value', true);
+  };
+
+  return (
+    <div>
+      <h1>Stored Value: {value}</h1>
+      <button onClick={handleSetValue}>Set Value</button>
+    </div>
+  );
+};
+
+export default ExampleComponent;

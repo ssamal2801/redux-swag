@@ -1,0 +1,23 @@
+{
+  "name": "redux-swag",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
+    "gitignore": "^0.7.0",
+    "react-redux": "^9.1.2",
+    "redux-persist": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "@types/react-redux": "^7.1.33",
+    "typescript": "^5.6.2"
+  }
+}
