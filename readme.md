@@ -6,7 +6,11 @@
 
 - **Simplified State Management**: Easily get and set state values with a few lines of code.
 - **Persistence Control**: Specify whether a value should be persisted or not.
-- **Compatibility**: Works seamlessly with Redux Toolkit and Redux Persist.
+
+## Coming Soon
+
+* Callback function to operate on the state variable before returning an updated value.
+* A way to group state variables.
 
 ## Installation
 
@@ -15,8 +19,11 @@ To install `redux-swag`, you can use npm or yarn:
 ```bash
 npm install redux-swag
 ```
+
 ## Example Usage:
+
 ### Step 1: Wrap your app component with State Provider
+
 ```bash
 // src/App.tsx
 import React from 'react';
@@ -37,7 +44,9 @@ const App: React.FC = () => {
 
 export default App;
 ```
+
 ### Step 2: Use in component
+
 ```bash
 import React, { useEffect, useState } from 'react';
 import reduxSwag from 'redux-swag';
